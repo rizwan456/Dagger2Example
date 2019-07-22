@@ -8,4 +8,5 @@ import dagger.Component;
 @Component(modules = {SharedPrefModule.class})
 public interface MyComponent {
     void inject(MainActivity activity);
+    void inject(Main2Activity main2Activity);
 }

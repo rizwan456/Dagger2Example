@@ -45,5 +45,14 @@
             android:layout_alignRight="@+id/inNumber"
             android:layout_alignEnd="@+id/inNumber" />
 
+        <Button
+            android:id="@+id/nextBtn"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
     </RelativeLayout>
 </layout>

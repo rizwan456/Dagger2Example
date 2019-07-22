@@ -20,22 +20,22 @@ import dagger.Provides;
 
 
 @Module
-public class SharedPrefModule {
+class SharedPrefModule {
     private Context context;
 
-    public SharedPrefModule(Context context) {
+    SharedPrefModule(Context context) {
         this.context = context;
     }
 
     @Singleton
     @Provides
-    public Context provideContex() {
+    Context provideContex() {
         return context;
     }
 
     @Singleton
     @Provides
-    public SharedPreferences provideSharePrefrances(Context context) {
+    SharedPreferences provideSharePrefrances(Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context);
     }
 
